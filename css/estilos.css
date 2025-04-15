@@ -80,6 +80,43 @@ body {
     display: none;
 }
 
+/* Aquí inicia el menú desplegable */
+.contenedor-header header nav ul li.dropdown-proyectos {
+    position: relative; /* Necesario para posicionar el dropdown */
+}
+
+.contenedor-header header nav ul li.dropdown-proyectos .dropdown-menu {
+    display: none; /* Ocultar por defecto */
+    position: absolute;
+    top: 100%; /* Desplegar hacia abajo */
+    left: 0;
+    background-color: #333;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    white-space: nowrap;
+}
+
+.contenedor-header header nav ul li.dropdown-proyectos:hover .dropdown-menu {
+    display: block; /* Mostrar al pasar el ratón */
+}
+
+.contenedor-header header nav ul li.dropdown-proyectos .dropdown-menu a {
+    padding: 8px 15px;
+    margin: 0;
+    display: block;
+    text-align: left;
+    color: #fff; /* Asegura que el color del texto sea blanco */
+    text-decoration: none; /* Elimina la decoración de los enlaces */
+}
+
+.contenedor-header header nav ul li.dropdown-proyectos .dropdown-menu a:hover {
+    background-color: #1e2326; /* Cambia el fondo al pasar el ratón */
+    color: #1CB698; /* Cambia el color del texto al pasar el ratón */
+}
+/* Aquí termina el menú desplegable */
+
 .nav__img {
     display: block;
     width: 30px;
